@@ -1,0 +1,61 @@
+#
+#  ██████████   █████   █████           ███             ██████   ██████  ███
+# ░░███░░░░███ ░░███   ░░███           ░░░             ░░██████ ██████  ░░░
+#  ░███   ░░███ ░███    ░███   ██████  ████  ████████   ░███░█████░███  ████  ████████    ██████  ████████
+#  ░███    ░███ ░███    ░███  ███░░███░░███ ░░███░░███  ░███░░███ ░███ ░░███ ░░███░░███  ███░░███░░███░░███
+#  ░███    ░███ ░░███   ███  ░███████  ░███  ░███ ░███  ░███ ░░░  ░███  ░███  ░███ ░███ ░███████  ░███ ░░░
+#  ░███    ███   ░░░█████░   ░███░░░   ░███  ░███ ░███  ░███      ░███  ░███  ░███ ░███ ░███░░░   ░███
+#  ██████████      ░░███     ░░██████  █████ ████ █████ █████     █████ █████ ████ █████░░██████  █████
+# ░░░░░░░░░░        ░░░       ░░░░░░  ░░░░░ ░░░░ ░░░░░ ░░░░░     ░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  ░░░░░
+#
+
+# DVeinMiner v1.0.0 by DxveDE
+# https://discord.gg/dxve
+
+settings:
+    # Checks automatically for updates
+    # If an update was found, you get a message on server join (you need operator to get the message)
+    update-checker: true
+
+    # Maximal amount of blocks that will be breaked when a player veinmine a block
+    max-blockamount: 64
+
+    # Ores are connected with deepslate variants
+    deepslate-connection: true
+
+    # Permission to use the '/dveinminer' command
+    permission: "dveinminer.use"
+
+    # Permission to use the veinminer tools
+    permission-worlds:
+        enabled: false
+        permission: "dveinminer.use.%worldname%" # If name of world is "Spawn", the placeholder is "spawn" (lower case)
+
+    # Only in this world list the veinminer tools can be used
+    world-whitelist:
+        enabled: false
+        worlds: []
+
+    # In this world list the veinminer tools are blocked
+    world-blacklist:
+        enabled: false
+        worlds: []
+
+    # If whitelist or blacklist is enabled, with this permission you can use the veinminer tool in all worlds
+    bypass:
+        enabled: false
+        permission: "dveinminer.bypass"
+
+    # Choose if player have to sneak on block break to veinmine
+    sneak-needed: true
+
+
+# The prefix for all messages (can be used with %prefix% in the messages, not for command-only-players)
+prefix: "&4DVeinMiner &8┃&7"
+
+messages:
+    no-permissions: "%prefix% &cYou do not have sufficient permissions for this."
+    command-only-players: "This command is only for players."
+    no-material-found: "%prefix% &cThe specified material was not found. Try 'STONE_PICKAXE', 'IRON_PICKAXE', 'DIAMOND_PICKAXE', ..."
+    get-item: "%prefix% &7You have received a §4DVeinMiner pickaxe§8."
+    syntax: "%prefix% &cUsage of command: &7/dveinminer give <material>"

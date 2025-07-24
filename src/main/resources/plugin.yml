@@ -1,6 +1,14 @@
-name: DVeinMiner
-version: '1.0'
+name: ${dxve.name}
+version: ${dxve.version}
 main: de.dxve.dVeinMiner.DVeinMiner
 api-version: '1.21'
 authors: [ Dxve ]
 website: https://dxve.de
+
+commands:
+    dveinminer:
+        description: 'VeinMiner command'
+        aliases:
+            - veinminer
+            - vm
+            - dvm
