@@ -127,8 +127,7 @@ messages:
 
 > 📹 Screenshots and a short demo video will be available soon:  
 
-- 🎥 [YouTube Demo](https://youtube.com/DEINVIDEO) (placeholder)  
-- 🖼️ GIFs coming soon...  
+- 🎥 [YouTube Demo](https://youtu.be/doP16U5l0v0)
 
 ---
 
